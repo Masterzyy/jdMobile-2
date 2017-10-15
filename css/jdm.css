@@ -1,0 +1,515 @@
+html,body{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #f7f7f7;
+}
+.jdm{
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 40px;
+  background-color: #c91523;
+
+}
+header .jdm-logo{
+  position: absolute;
+  top: 10px;
+  left:10px;
+  width: 56px;
+  height: 21px;
+  background-image: url("../image/jd-sprites.png");
+  background-position: 0 -109px;
+  background-size: 200px 200px;
+}
+header .search-box{
+  height:100%;
+  width: 100%;
+  padding-left: 75px;
+  padding-right: 50px;
+  /* background-color: #fff; */
+  box-sizing: border-box;
+  position: relative;
+
+}
+header .icon-search{
+  position: absolute;
+  top: 5px;
+  left:80px;
+  width: 20px;
+  height: 30px;
+  background-image: url("../image/jd-sprites.png");
+  background-position: -59px -104px;
+  background-size: 200px 200px;
+}
+
+header .search-box input{
+  width: 100%;
+  height: 30px;
+  border: 1px solid #fff;
+  margin-top: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 15px;
+  /* background-color: #fff; */
+  padding-left: 30px;
+}
+
+header .jdm-login{
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 16px;
+  color: #fff;
+  line-height: 40px;
+}
+
+/* main部分 */
+main{
+  width: 100%;
+  padding-bottom: 500px;
+}
+main .carousel{
+  width: 100%;
+}
+main .carousel img{
+  width: 100%;
+}
+
+.nav{
+  width: 100%;
+  padding-top:10px;
+  background-color: #fff;
+}
+
+.nav ul{
+  width: 100%;
+}
+.nav li{
+  width: 25%;
+  float: left;
+  padding-bottom: 10px;
+}
+
+.nav a{
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.nav img {
+  width: 40px;
+  height: 40px;
+}
+
+.nav span {
+  display: block;
+  margin-top: 5px;
+}
+
+
+
+
+/* 底部工具栏，利用flex */
+.toolbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 44px;
+  background-color: #fff;
+  z-index: 100;
+}
+.toolbar ul{
+  display: flex;
+}
+.toolbar li{
+  height: 100%;
+  flex: 1;
+  float: left;
+}
+.toolbar li a{
+  height: 100%;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.toolbar li img{
+  height: 44px;
+}
+
+/* 秒杀 */
+.seckill{
+   width: 100%;
+   background-color: #fff;
+   padding: 0 8px;
+   margin-top:5px;
+   box-sizing: border-box;
+  height: auto;
+}
+
+.seckill .seckill-top{
+ line-height: 1;
+  padding: 10px 0;
+  width: 100%;
+  overflow: hidden;
+}
+.seckill-top h2{
+  position: relative;
+  color: #c91523;
+  margin-left: 22px;
+  float: left;
+  font-size: 14px;
+  font-weight: normal;
+
+}
+.seckill-top h2::before{
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -22px;
+  width: 20px;
+  height: 26px;
+  background-image: url("../image/jd-sprites.png");
+  background-size: 200px 200px;
+  background-position: -84px -107px;
+}
+.seckill-time{
+  float: left;
+  margin-left: 10px;
+}
+
+.seckill-time span{
+  display: block;
+  float: left;
+  background-color: #000000;
+  font-size: 13px;
+  color: #fff;
+ padding-top: 1px;
+
+}
+.seckill span:nth-child(3n){
+  background-color: #fff;
+  color: #000000;
+  margin: 0 2px;
+}
+.seckill span:nth-child(3n+1){
+  padding-left: 2px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.seckill .seckill-time span:nth-child(3n+2) {
+  padding-right: 2px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.seckill-more{
+  position: relative;
+  top: 3px;
+  margin-right: 10px;
+  font-size: 12px;
+  float: right;
+  line-height: 15px;
+}
+
+.seckill-more::after{
+  content: '';
+  position: absolute;
+  top: 1px;
+  right: -10px;
+  width: 7px;
+  height: 12px;
+  background-image: url("../image/jd-sprites.png");
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+  background-position: -186px -51px;
+}
+.seckill .seckill-bottom{
+  width: 100%;
+  margin-top: 10px;
+  }
+  .seckill-bottom ul{
+    width: 100%;
+    overflow: hidden;
+  }
+  .seckill-bottom ul li{
+    float: left;
+    width: 33.33333%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  .seckill .seckill-bottom  a {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+  .seckill .seckill-bottom  img {
+    width: 100%;
+    vertical-align: middle;
+  }
+  .seckill .seckill-bottom  b {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: orange;
+    padding: 4px 5px;
+    border-radius: 50%;
+    line-height: 1;
+    text-align: center;
+    color: #fff;
+    font-weight: normal;
+  }
+  .seckill .seckill-bottom .price {
+    width: 100%;
+    margin-top: 5px;
+  }
+  .seckill .seckill-bottom .price span {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+  }
+  .seckill .seckill-bottom .price span.new-price {
+    color:#c91523;
+  }
+  
+  .seckill .seckill-bottom .price span.old-price {
+    font-size: 12px;
+    margin: 5px 0;
+    margin-bottom: 10px;
+    text-decoration: line-through;
+  }
+
+  .meeting{
+    width: 100%;
+    position: relative;
+  }
+  .meeting img{
+    width: 100%;
+    vertical-align: middle;
+  }
+  .meeting ul{
+    position: absolute;  
+    bottom: 8px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0  8px;
+
+  }
+  .meeting li{
+    float: left;
+    width: 50%;
+  }
+  .hotsale{
+    width: 100%;
+    overflow: hidden;
+    
+  }
+  .hotsale ul{
+    width: 100%;
+  }
+  .hotsale li{
+    width: 100%;
+    overflow: hidden;
+  }
+  .hotsale li a{
+    width: 50%;
+    display: block;
+    float: left;
+  }
+  .hotsale li img{
+    width: 100%;
+    vertical-align: middle;
+  }
+  .hotsale li:first-child a{
+    width: 33.33333%;
+  }
+
+  .advert {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  .advert img{
+    width: 100%;
+  }
+
+  .market{
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+  }
+  .market h2,.theme h2{
+    width: 100%;
+    color: #c91523;
+    font-size: 16px;
+    float: left;
+    font-weight: normal;
+    height: 34px;
+    line-height: 34px;
+    padding-left: 8px;
+    box-sizing: border-box;
+  }
+  .market ul,.theme ul{
+    width: 100%;
+    overflow: hidden;
+
+  }
+  .market ul li{
+    width: 50%;
+    float: left;
+    overflow: hidden;
+  
+  }
+  
+  .market li a{
+    display: block;
+    width: 100%;
+  }
+  .market img{
+    width: 100%;
+    float: left;
+    vertical-align: middle;
+  }
+  .theme li{
+    width: 100%;
+    overflow: hidden;
+  }
+  .theme li a{
+    width: 25%;
+    display: block;
+    float: left;
+    overflow: hidden;
+    
+  }
+  .theme li:first-child a{
+    width: 50%;
+    float: left;
+  }
+  .theme li:first-child a:nth-child(3),.theme li:first-child a:nth-child(4) {
+    width: 25%;
+  }
+  .theme img{
+    width: 100%;
+    float: left;
+    vertical-align: middle;
+  }
+
+  .brand{
+    width: 100%;
+
+  }
+  .brand ul{
+    width: 100%;
+    overflow: hidden;
+  }
+  .brand li:first-child{
+    width: 40%;
+  }
+  .brand li{
+    width: 30%;
+    float: left;
+  }
+  .brand li a{
+    display: block;
+    float: left;
+    width: 100%;
+  }
+  .brand li a img{
+    width: 100%;
+    vertical-align:middle;
+  }
+
+  .guess{
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .guess .guess-top{
+    height: 34px;
+    padding: 0 8px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .guess-top h2{
+   
+    /* color: #c91523; */
+    font-size: 16px;
+    float: left;
+    font-weight: normal;
+    line-height: 34px;
+  }
+  .guess .guess-top .guess-login {
+    float: right;
+    line-height: 34px;
+    color:#c91523;
+    position: relative;
+    margin-right: 10px;
+  }
+  .guess .guess-top .guess-login:before{
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -24px;
+    width: 18px;
+    height: 18px;
+    background-image: url("../image/icon-login.png");
+    background-size: 18px 18px;
+  }
+  .guess-bottom{
+    width: 100%;
+    overflow: hidden;
+  }
+  .guess-bottom .item{
+    width: 50%;
+    float: left;
+    padding: 0 8px;
+    box-sizing: border-box;
+  }
+  .guess-bottom .item>a{
+    width: 100%;
+    display: block;
+  }
+  .guess-bottom .item>a img{
+    width: 100%;
+    float: left;
+    
+  }
+  .guess .item p{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+    width: 100%;
+    height: 40px;
+    line-height: 20px;
+    margin-top: 8px;
+    font-size: 13px;
+  }
+  .guess .item .price {
+    width: 100%;
+    border-top: 1px solid #ccc;
+    margin-top: 6px;
+    padding-top: 8px;
+  }
+  
+  .guess .item .price span  {
+    color:#c91523;
+    font-size: 13px;
+    line-height: 22px;
+  }
+  
+  .guess .item .see-like {
+    float: right;
+    color: #ccc;
+    border:1px solid #ccc;
+    padding: 2px;
+    border-radius: 3px;
+  }
